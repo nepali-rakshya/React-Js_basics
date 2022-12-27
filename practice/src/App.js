@@ -2,11 +2,12 @@ import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
+  const link = "http://www.google.com";
+
   return (
-    <div className="App">
-      <div className="content">
-        <h1>App Component</h1>
-      </div>
+    <div className="App App-header">
+      <h1>Apple Watches</h1>
+      <div className="App-link">{link}</div>
     </div>
   );
 }
