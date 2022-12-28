@@ -59,7 +59,6 @@ function Page() {
     >
       <Header />
       <MainContent />
-
       <Footer />
     </div>
   );
