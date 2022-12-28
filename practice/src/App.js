@@ -7,7 +7,7 @@ const user = {
 };
 
 function formatName(users) {
-  if (users) {
+  if (!users) {
     return <h1>My name is {users.firstName + " " + users.lastName}</h1>;
   } else {
     return <h2>Hello Strangers!</h2>;
@@ -23,11 +23,7 @@ function App() {
   //     </div>
   //   </div>
   // );
-  return (
-    <div>
-      <p>{formatName(user)}</p>
-    </div>
-  );
+  return <div>{formatName(user)}</div>;
 }
 
 export default App;
