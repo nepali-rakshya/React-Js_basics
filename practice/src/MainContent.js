@@ -1,35 +1,4 @@
-import "./index.css";
-import React from "react";
-import ReactDOM from "react-dom/client";
-
-const image = "./logo192.png";
-
-function Header() {
-  return (
-    <header className="img center">
-      <img src={image} alt="react-logo" width="50px" />
-      <nav>
-        <ul>
-          <li>Pricing</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
-      </nav>
-    </header>
-  );
-}
-
-function Footer() {
-  return (
-    <footer>
-      <small className="center">
-        &copy; 2022 Nepali development. All rights reserved.
-      </small>
-    </footer>
-  );
-}
-
-function MainContent() {
+const MainContent = () => {
   return (
     <main className="main-content center">
       <h1>Fun facts about React</h1>
@@ -42,17 +11,6 @@ function MainContent() {
       </ul>
     </main>
   );
-}
+};
 
-function Page() {
-  return (
-    <div className="container">
-      <Header />
-      <MainContent />
-      <Footer />
-    </div>
-  );
-}
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Page />);
+export default MainContent;
