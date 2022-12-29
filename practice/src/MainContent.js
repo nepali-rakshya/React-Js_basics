@@ -1,3 +1,4 @@
+import "./index.css";
 import React from "react";
 import ReactDOM from "react-dom/client";
 
@@ -5,13 +6,15 @@ const image = "./logo192.png";
 
 function Header() {
   return (
-    <header
-      className="img"
-      style={{
-        marginBottom: "1em",
-      }}
-    >
+    <header className="img center">
       <img src={image} alt="react-logo" width="50px" />
+      <nav>
+        <ul>
+          <li>Pricing</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
     </header>
   );
 }
@@ -19,26 +22,17 @@ function Header() {
 function Footer() {
   return (
     <footer>
-      <small>&copy; 2022 Nepali development. All rights reserved.</small>
+      <small className="center">
+        &copy; 2022 Nepali development. All rights reserved.
+      </small>
     </footer>
   );
 }
 
 function MainContent() {
   return (
-    <main
-      className="main-content"
-      style={{
-        marginBottom: "1em",
-      }}
-    >
-      <h1
-        style={{
-          marginBottom: "0.3em",
-        }}
-      >
-        Fun facts about React
-      </h1>
+    <main className="main-content center">
+      <h1>Fun facts about React</h1>
       <ul>
         <li>Was first released in 2013</li>
         <li>Was originally created by Jordan Walke</li>
@@ -52,11 +46,7 @@ function MainContent() {
 
 function Page() {
   return (
-    <div
-      style={{
-        margin: "3em",
-      }}
-    >
+    <div className="container">
       <Header />
       <MainContent />
       <Footer />
