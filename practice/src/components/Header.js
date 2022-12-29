@@ -1,5 +1,7 @@
+import logo from "./logo192.png";
+
 const Header = () => {
-  const image = "./logo192.png";
+  const image = { logo };
 
   return (
     <header className="img center">
