@@ -1,8 +1,6 @@
-import FooterCSS from "./Footer.module.css";
-
 const Footer = () => {
   return (
-    <footer className={FooterCSS.footer}>
+    <footer className="footer center">
       <small>&copy; 2022 Nepali development. All rights reserved.</small>
     </footer>
   );
