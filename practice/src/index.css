@@ -3,7 +3,7 @@
 * {
   margin: 0;
   font-family: "Quicksand";
-  color: red;
+  color: white;
 }
 
 /* container */
@@ -14,7 +14,6 @@
 
 .center {
   padding: 1em;
-  color: white;
 }
 
 /* header */
@@ -60,5 +59,4 @@ footer {
   width: 100%;
   background-color: grey;
   padding: 0.4em;
-  color: #000000;
 }
