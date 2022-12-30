@@ -3,13 +3,17 @@
 * {
   margin: 0;
   font-family: "Quicksand";
-  color: #333;
 }
 
 /* container */
+.container {
+  height: 100vh;
+  background: #282d35;
+}
 
 .center {
   padding: 1em;
+  color: white;
 }
 
 /* header */
@@ -32,6 +36,11 @@ nav ul {
   gap: 2em;
 }
 
+ul li::marker {
+  font-size: 1.3rem;
+  color: #61dafb;
+}
+
 /* middle content */
 
 .main-content {
@@ -48,6 +57,7 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: rgba(36, 35, 35, 0.5);
-  padding: 0.5em;
+  background-color: grey;
+  padding: 0.4em;
+  color: #000000;
 }

@@ -1,11 +1,9 @@
-import logo from "./logo192.png";
+import logo from "../img/logo192.png";
 
 const Header = () => {
-  const image = { logo };
-
   return (
     <header className="img center">
-      <img src={image} alt="react-logo" width="50px" />
+      <img src={logo} alt="react-logo" width="50px" />
       <nav>
         <ul>
           <li>Pricing</li>
