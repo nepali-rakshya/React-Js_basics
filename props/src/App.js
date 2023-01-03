@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import Contact from "./Contact";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div
+      style={{
+        display: "flex",
+        flexWrap: "wrap",
+      }}
+    >
+      <Contact
+        img="./img/singing.jpg"
+        name="Mr. Humpty"
+        phone="+977 9863215562"
+        email="mr.humpty@gmail.com"
+      />
+      <Contact
+        img="./img/singing.jpg"
+        name="Mr. Dumpty"
+        phone="+977 9863215562"
+        email="mr.dumpty@gmail.com"
+      />
+      <Contact
+        img="./img/singing.jpg"
+        name="Mr. Headson"
+        phone="+977 9863215562"
+        email="mr.headson@gmail.com"
+      />
+      <Contact
+        img="./img/singing.jpg"
+        name="Mr. Glamor"
+        phone="+977 9863215562"
+        email="mr.glamor@gmail.com"
+      />
     </div>
   );
-}
+};
 
 export default App;
