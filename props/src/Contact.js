@@ -1,13 +1,12 @@
 import ContactCSS from "./Contact.module.css";
 
-const Contact = (props) => {
-  console.log(props);
+const Contact = ({ img, name, phone, email }) => {
   return (
     <div className={ContactCSS.contact}>
-      <img src={props.img} alt="" width="150px" />
-      <h3>{props.name}</h3>
-      <p>{props.phone}</p>
-      <p>{props.email}</p>
+      <img src={img} alt="" width="150px" />
+      <h3>{name}</h3>
+      <p>{phone}</p>
+      <p>{email}</p>
     </div>
   );
 };
