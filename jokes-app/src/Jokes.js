@@ -5,12 +5,14 @@ const Jokes = (props) => {
       {/* <h4 style={{ display: props.setup ? "block" : "none" }}>
         Setup: {props.setup}
       </h4> */}
-      {props.setup && (
+      {/* {props.setup && (
         <h4 style={{ background: "lightpink" }}>Setup: {props.setup}</h4>
-      )}
+      )} */}
+      {/* <p>No of likes: {props.likes}</p>
+      <p>It is pun: {props.isPun}</p> */}
+
+      <p>Setup: {props.setup}</p>
       <p>Punchline: {props.punchline}</p>
-      <p>No of likes: {props.likes}</p>
-      <p>It is pun: {props.isPun}</p>
     </main>
   );
 };
