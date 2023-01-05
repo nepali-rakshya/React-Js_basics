@@ -13,6 +13,7 @@ const Jokes = (props) => {
 
       <p>Setup: {props.setup}</p>
       <p>Punchline: {props.punchline}</p>
+      <img src={props.img1} alt="" />
     </main>
   );
 };

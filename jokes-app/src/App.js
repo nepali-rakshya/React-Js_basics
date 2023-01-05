@@ -32,7 +32,13 @@ import jokesData from "./jokesData";
 
 const App = () => {
   const jokesElement = jokesData.map((jokes) => {
-    return <Jokes setup={jokes.setup} punchline={jokes.punchline} />;
+    return (
+      <Jokes
+        setup={jokes.setup}
+        punchline={jokes.punchline}
+        img1={jokes.img1}
+      />
+    );
   });
 
   return <div>{jokesElement}</div>;

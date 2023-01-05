@@ -2,6 +2,7 @@ export default [
   {
     setup: "A pun, a play on words, and a limerick walk into a bar.",
     punchline: "No joke",
+    img1: "/image/singing.jpg",
   },
   {
     setup: "How do mathematicians scold their children?",
