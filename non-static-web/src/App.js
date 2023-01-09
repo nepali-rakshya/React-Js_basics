@@ -1,7 +1,7 @@
 import "./index.css";
 
 function App() {
-  function handleHover() {
+  function handleClick() {
     console.log("I am a react logo");
   }
 
@@ -12,7 +12,7 @@ function App() {
   return (
     <div>
       <img src="/logo192.png" alt="" onMouseOver={onMouseOver} /> <br />
-      <button>Click me</button>
+      <button onClick={handleClick}>Click me</button>
     </div>
   );
 }
