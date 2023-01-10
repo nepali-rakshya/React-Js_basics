@@ -2,10 +2,10 @@ import "./index.css";
 import React, { useState } from "react";
 
 function App() {
-  const thingsArray = ["Thing 1", "Thing 2"];
-  const listArrayItems = thingsArray.map((item) => {
-    return <p key={item}>{item}</p>;
-  });
+  // const thingsArray = ["Thing 1", "Thing 2"];
+  // const listArrayItems = thingsArray.map((item) => {
+  //   return <p key={item}>{item}</p>;
+  // });
 
   // function handleClick() {
   //   const value = thingsArray.length;
@@ -29,16 +29,21 @@ function App() {
   //   }
   // }
 
-  const [isImportant, setIsImportant] = React.useState(thingsArray[0]);
+  let array = ["hello", "rakshya", "cutie"];
 
-  function handleClick() {
-    setIsImportant(thingsArray[1]);
+  let [isImportant, setIsImportant] = React.useState(array);
+  console.log(isImportant);
+
+  function pushingArray() {
+    isImportant = array.push("girl");
+    // console.log(array);
+    setIsImportant(isImportant);
   }
 
   return (
     <div className="div__button">
-      <button onClick={handleClick}> Add item</button>
-      {listArrayItems}
+      <button onClick={pushingArray}> Add item</button>
+      {/* {listArrayItems} */}
       <p>{isImportant}</p>
     </div>
   );
