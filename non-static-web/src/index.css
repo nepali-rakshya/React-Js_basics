@@ -1,8 +1,28 @@
+div.div__button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50vh;
+  align-items: center;
+  font-size: 1em;
+  color: white;
+}
+
 button {
-  padding: 1em 2em;
+  color: white;
+  font-size: 1.3em;
+  width: fit-content;
+  border-radius: 10em;
+  padding: 1em 6em;
+  background: rgb(49, 160, 49);
+  border: 2px solid rgba(255, 255, 255, 0.884);
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.616);
+  color: black;
 }
 
 body {
-  background: limegreen;
-  color: white;
+  background: rgb(49, 160, 49);
 }
