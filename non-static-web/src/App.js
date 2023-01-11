@@ -31,13 +31,15 @@ function App() {
 
   let array = ["hello", "rakshya", "cutie"];
 
-  let [isImportant, setIsImportant] = React.useState(array);
-  console.log(isImportant);
+  let [isImportant, setIsImportant] = React.useState(array[0]);
 
+  let count = 1;
   function pushingArray() {
-    isImportant = array.push("girl");
-    // console.log(array);
-    setIsImportant(isImportant);
+    if (count < array.length) {
+      let value = array[count];
+      setIsImportant(value);
+      count++;
+    }
   }
 
   return (
