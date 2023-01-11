@@ -7,11 +7,11 @@ function App() {
   let [changeNum, setChangeNum] = useState(initalNum);
 
   function handleMinus() {
-    setChangeNum((prevValue) => prevValue - 1);
+    setChangeNum((prevChangeNum) => prevChangeNum - 1);
   }
 
   function handlePlus() {
-    setChangeNum((prevValue) => prevValue + 1);
+    setChangeNum((prevChangeNum) => prevChangeNum + 1);
   }
 
   return (
