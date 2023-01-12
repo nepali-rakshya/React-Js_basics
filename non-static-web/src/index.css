@@ -12,11 +12,11 @@ div.div__button,
 button,
 .state--value {
   color: rgb(49, 160, 49);
-  /* font-size: 1.3em; */
-  /* width: fit-content; */
-  width: 20%;
+  font-size: 1.3em;
+  width: fit-content;
+  /* width: 20%; */
   border-radius: 100%;
-  /* padding: 1em 6em; */
+  padding: 1em 6em;
   background: white;
   border: 2px solid rgba(255, 255, 255, 0.884);
   text-align: center;
