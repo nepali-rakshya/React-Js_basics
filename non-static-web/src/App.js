@@ -2,17 +2,35 @@ import "./index.css";
 import React, { useState } from "react";
 
 function App() {
+  let [isGoingOut, setIsGoingOut] = useState(true);
+
+  function handleMouse() {
+    if (isGoingOut === true) {
+      return setIsGoingOut((prevOut) => (prevOut = false));
+    } else {
+      return setIsGoingOut((prevOut) => (prevOut = true));
+    }
+  }
+
   return (
     <div className="state">
       <h1 className="state--title">Do I feel like going out tonight?</h1>
-      <div className="state--value">
-        <h1>yes</h1>
+      <div className="state--value" onMouseEnter={handleMouse}>
+        <h1>{isGoingOut === true ? "Yes" : "No"}</h1>
       </div>
     </div>
   );
 }
 
 export default App;
+
+//
+//
+//
+
+//
+//
+//
 
 //
 //
