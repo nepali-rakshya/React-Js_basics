@@ -2,22 +2,26 @@ import "./index.css";
 import React, { useState } from "react";
 
 function App() {
-  // const thingsArray = ["Thing 1", "Thing 2", "Thing 3"];
-  const [arrayThings, setArrayThings] = useState(["Thing 1", "Thing 2"]);
+  const thingsArray = ["Thing 1", "Thing 2"];
+
+  let [incArray, setIncArray] = React.useState(thingsArray);
 
   function handleClick() {
-    setArrayThings((prevState) => [
-      ...prevState,
-      `Thing ${prevState.length + 1}`,
-    ]);
+    setIncArray((prevArrayState) => {
+      prevArrayState = [
+        ...prevArrayState,
+        `Thing ${prevArrayState.length + 1}`,
+      ];
+      return prevArrayState;
+    });
   }
 
-  const arrayElements = arrayThings?.map((item) => <p key={item}>{item}</p>);
+  const printEach = incArray.map((item) => <p key={item}>{item}</p>);
 
   return (
     <div className="div__button">
-      <button onClick={handleClick}> Add item</button>
-      {arrayElements}
+      <button onClick={handleClick}>Add item</button>
+      {printEach}
     </div>
   );
 }
