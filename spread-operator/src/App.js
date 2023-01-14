@@ -10,19 +10,16 @@ function App() {
     isFavorite: false,
   });
 
-  let { firstName, lastName, number, email } = bioData;
+  let starIcon = 
+  let { firstName, lastName, number, email, isFavorite } = bioData;
 
   return (
     <div className="App">
       <div className="bio__img">
         <img src="/img/avatar.png" alt="avatar" width="200px" /> <br />
-        <img
-          src="/img/star-filled.png"
-          alt="star-filled"
-          // style={{ display: "none" }}
-        />
-        <br />
-        {/* <img src="/img/star.png" alt="star" /> */}
+        {/* <img src="/img/star-filled.png" alt="star-filled" /> */}
+        
+        <img src="/img/star.png" alt="star" onClick={setBioData(!isFavorite)}/>
       </div>
       <div>
         <h1>{`${firstName} ${lastName}`}</h1>
