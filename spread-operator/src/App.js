@@ -9,13 +9,21 @@ const App = () => {
     isFavorite: false,
   });
 
-  let { firstName, lastName, phone, email } = data;
+  let { firstName, lastName, phone, email, isFavorite } = data;
+
+  let starIcon = <img src="/img/star.png" alt="star" />;
+
+  const handleClick = () => {
+    setData(
+      !isFavorite ? <img src="/img/star-filled.png" alt="star" /> : { starIcon }
+    );
+  };
 
   return (
     <div className="card">
       <img src="/img/avatar.png" alt="profile" width="150" />
       <br />
-      <img src="/img/star.png" alt="star" onClick={handleClick} />
+      <p onClick={handleClick}>{starIcon}</p>
       <h1>
         {firstName} {lastName}
       </h1>
