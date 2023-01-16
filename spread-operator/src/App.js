@@ -1,19 +1,15 @@
 import React, { useState } from "react";
 
 const App = () => {
-  let [clickButton, setClickButton] = useState(["I am alive", "I am boy"]);
+  let [objUpdate, setObjUpdate] = useState({
+    name: "rakshya",
+  });
 
-  function handleClick() {
-    setClickButton(clickButton[1]);
-  }
+  const handleClick = () => {
+    setObjUpdate((prevState) => (prevState = { ...prevState, name: "ram" }));
+  };
 
-  return (
-    <div className="App">
-      {/* {clickButton !== "" ? clickButton : <h1>I am h1</h1>} */}
-      <h1>{clickButton}</h1>
-      <button onClick={handleClick}>Click me</button>
-    </div>
-  );
+  return <button onClick={handleClick}>{objUpdate.name}</button>;
 };
 
 export default App;
