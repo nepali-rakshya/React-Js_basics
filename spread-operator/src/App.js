@@ -1,15 +1,26 @@
 import React, { useState } from "react";
 
 const App = () => {
-  let [value, setValue] = useState("rakshya");
+  let [data, setData] = useState({
+    firstName: "John",
+    lastName: "Doe",
+    phone: "+9779863215562",
+    email: "johndoe@gmail.com",
+    isFavorite: false,
+  });
+
+  let { firstName, lastName, phone, email } = data;
+
   return (
-    <div>
-      {value} <br />
-      <input
-        type="text"
-        value={value}
-        onChange={(e) => setValue(e.target.value)}
-      />
+    <div className="card">
+      <img src="/img/avatar.png" alt="profile" width="150" />
+      <br />
+      <img src="/img/star.png" alt="star" onClick={handleClick} />
+      <h1>
+        {firstName} {lastName}
+      </h1>
+      <p>{phone}</p>
+      <p>{email}</p>
     </div>
   );
 };
@@ -76,3 +87,15 @@ export default App;
 // }
 
 // return <button onClick={handleClick}>{update}</button>;
+
+// let [value, setValue] = useState("rakshya");
+// return (
+//   <div>
+//     {value} <br />
+//     <input
+//       type="text"
+//       value={value}
+//       onChange={(e) => setValue(e.target.value)}
+//     />
+//   </div>
+// );
