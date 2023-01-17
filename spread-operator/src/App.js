@@ -14,10 +14,10 @@ const App = () => {
   let starIcon = isFavorite ? "star-filled.png" : "star.png";
 
   function handleClick() {
-    setData(
+    setData((prevData) =>
       isFavorite === false
-        ? { ...data, isFavorite: true }
-        : { ...data, isFavorite: false }
+        ? { ...prevData, isFavorite: true }
+        : { ...prevData, isFavorite: false }
     );
   }
 
